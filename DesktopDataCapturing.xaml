@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DesktopDataCapturing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1037,1720" sap2010:WorkflowViewState.IdRef="DesktopDataCapturing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DesktopDataCapturing" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1037,2889" sap2010:WorkflowViewState.IdRef="DesktopDataCapturing_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="74">
       <x:String>System.Activities</x:String>
@@ -97,7 +97,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DesktopDataCapturing" sap:VirtualizedContainerService.HintSize="594,1655" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DesktopDataCapturing" sap:VirtualizedContainerService.HintSize="594,2824" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="CustomerData" />
       <Variable x:TypeArguments="x:Int32" Name="RowNumber">
@@ -112,21 +112,21 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[CustomerData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="532,97" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="customers.xlsx" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: RPA Complete Bootcamp : Sample Desktop App" sap:VirtualizedContainerService.HintSize="532,1396" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: RPA Complete Bootcamp : Sample Desktop App" sap:VirtualizedContainerService.HintSize="532,2565" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498,1096" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="498,2265" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="436,973" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="436,2142" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,798" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,1967" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -210,17 +210,6 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:IfElseIf>
-                  <uix:NClick ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="354, 473, 98, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;wnd ctrlname='button1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='button1' check:text='Save' /&gt;" Guid="ee70b5d2-c461-4fa8-b1dc-6dc8ad04b5e2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAApCAYAAADH0VzbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFrSURBVHhe7dbBkYMwDIVh9+Ru3IxbcQMUoVLogA4U2cZBJOzuzF54Zt7hn0kIyYEPiYRt25ThRRjQCAPaCWZZFnZj3uILZl1XdkOEAY0woBEGNMKARhjQCAMaYUAjDGiEAY0woBEGtLlgJGsMQUMtRs3l4pyHNBFM0RQMQ/b3DSlp+TrvGc0DUyFiVrn67IFNNDGiOQZNuaiMqRmVdKw4m6rUVtwvE2avk/1WX4npOAeoiWAsKZpTfANcXlA3WSUFjVnaccn2vVTsdQX+AAOcxLlgXGJTEsYFbRMwwOoUHMf7RXcY9dg4790PyDc2LUxfVXU17Sur9Mk4T8AAcccaDP6fhmlg+ioaF9xPTAcad7xkN0n796LhjJV2PKuuIHGaaGLEnhl+Xdld7zDGeqoIHqZPyMeqsmcVH/7sXxEGNMKARhjQCAMaYUAjDGiEAY0woBEGNMKARhjQ/oRh9+UtTjAMJ8KARhjINn0BpIStOk2MlaoAAAAASUVORK5CYII=" InformativeScreenshot="768edbfc435764646b7892a4aabfd70d.png" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </uix:NClick>
                   <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Text="[CustomerData.Rows(RowNumber)(&quot;address&quot;).ToString]" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="201, 229, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Address'" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='textBox3' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='textBox3' /&gt;" Guid="a78ebc08-8977-455e-9b08-a36d80b01bca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAYCAYAAABJLzcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABnSURBVHhe7dJBDYBAEMBAdK/qdXD8+AAGmpmkDnrt7pGqGVzpnsFnRsr0OTgUGJw0g5NmcNIMTprBSTM4aQYnzeCkGZw0g5NmcNIMTprBSTM4aQYnzeCkGZy038GlSq/BpWIGV7g9N29sxizUYGeHAAAAAElFTkSuQmCC" InformativeScreenshot="f75fe2a03f0a3b31391c92dad2a8edd8.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
@@ -255,6 +244,156 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
+                  <uix:NSelectItem DisplayName="Select Item 'State'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CustomerData.Rows(RowNumber)(&quot;state&quot;).ToString]" ScopeIdentifier="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Version="V3">
+                    <uix:NSelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="50">
+                        <x:String>Alabama</x:String>
+                        <x:String>Alaska</x:String>
+                        <x:String>Arizona</x:String>
+                        <x:String>Arkansas</x:String>
+                        <x:String>California</x:String>
+                        <x:String>Colorado</x:String>
+                        <x:String>Connecticut</x:String>
+                        <x:String>Delaware</x:String>
+                        <x:String>District of Columbia</x:String>
+                        <x:String>Florida</x:String>
+                        <x:String>Georgia</x:String>
+                        <x:String>Hawaii</x:String>
+                        <x:String>Idaho</x:String>
+                        <x:String>Illinois</x:String>
+                        <x:String>Indiana</x:String>
+                        <x:String>Iowa</x:String>
+                        <x:String>Kansas</x:String>
+                        <x:String>Kentucky</x:String>
+                        <x:String>Louisiana</x:String>
+                        <x:String>Maine</x:String>
+                        <x:String>Maryland</x:String>
+                        <x:String>Massachusetts</x:String>
+                        <x:String>Michigan</x:String>
+                        <x:String>Minnesota</x:String>
+                        <x:String>Mississippi</x:String>
+                        <x:String>Missouri</x:String>
+                        <x:String>Montana</x:String>
+                        <x:String>Nebraska</x:String>
+                        <x:String>Nevada</x:String>
+                        <x:String>New Hampshire</x:String>
+                        <x:String>New Jersey</x:String>
+                        <x:String>New Mexico</x:String>
+                        <x:String>New York</x:String>
+                        <x:String>North Carolina</x:String>
+                        <x:String>North Dakota</x:String>
+                        <x:String>Ohio</x:String>
+                        <x:String>Oklahoma</x:String>
+                        <x:String>Oregon</x:String>
+                        <x:String>Pennsylvania</x:String>
+                        <x:String>Rhode Island</x:String>
+                        <x:String>South Carolina</x:String>
+                        <x:String>South Dakota</x:String>
+                        <x:String>Tennessee</x:String>
+                        <x:String>Texas</x:String>
+                        <x:String>Utah</x:String>
+                        <x:String>Vermont</x:String>
+                        <x:String>Virginia</x:String>
+                        <x:String>Washington</x:String>
+                        <x:String>West Virginia</x:String>
+                        <x:String>Wisconsin</x:String>
+                      </scg:List>
+                    </uix:NSelectItem.Items>
+                    <uix:NSelectItem.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="201, 264, 180, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'------Select State------'" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='comboBox1' /&gt;&lt;ctrl name='State :' role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='comboBox1' /&gt;&lt;ctrl name='State :' role='combo box' automationid='' /&gt;" Guid="ba627d9d-10da-4d24-b2b5-99b729bd3cc6" InformativeScreenshot="6deeb116287c4e59f933f1fb1eedc4e8.png" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="118, 267, 38, 13" ElementType="Text" FriendlyName="'State'" FullSelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='label7' /&gt;&lt;ctrl name='State :' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='label7' /&gt;&lt;ctrl name='State :' role='text' automationid='' check:text='State :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAARCAYAAACrfj41AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVEhL7ZPhEYMgDIWZinmyTYbJLszCBmmIBEHBas/2tOePdwrE4/PlxcUY+Q56QM/WH4AGZO8cuyTvGalT80MNQInBCVzIa4UGpvT0yGFVX2lPzQfqg44uuxxoDIzeMSBxMFfz3hSFDEIwx0M6ANSpEXAoezB3qVHqoHRstT9rI6PECL5A6AVbbtlZU5PAFxEaff9GY9BKQZxTh5YXyRoEZPqZ7GJdk97trKgCP6BdoKU1DWgeOGm31tjZCnS7pXvVBQ0oLoEBjRyd4M2dgL0ay/riZ/TsmIbDRCWfIhkCUiDJrQ7G5FKCs9b6FAGFaGtS1r87TBfTA3q2bgIa+QXYG9U2MQIReQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NSelectItem.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NSelectItem>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Home Phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Text="[CustomerData.Rows(RowNumber)(&quot;home phone&quot;).ToString]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="201, 342, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Home Phone'" FullSelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='textBox5' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='textBox5' /&gt;" Guid="af33b55b-f0a9-4c6d-a7c4-49c15c3534f3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAYCAYAAABJLzcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABnSURBVHhe7dJBDYBAEMBAdK/qdXD8+AAGmpmkDnrt7pGqGVzpnsFnRsr0OTgUGJw0g5NmcNIMTprBSTM4aQYnzeCkGZw0g5NmcNIMTprBSTM4aQYnzeCkGZy038GlSq/BpWIGV7g9N29sxizUYGeHAAAAAElFTkSuQmCC" InformativeScreenshot="abb91a4d53b13d8507da1965e38e27ea.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="115, 345, 75, 13" ElementType="Text" FriendlyName="'Home Phone'" FullSelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='label8' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='label8' check:text='Home Phone :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAARCAYAAACcsPEBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEwSURBVFhH7VXRrcMgDGQq5vE2DMMuzJIN/Agx1CIOMaGtqid/nOoc2D4udXDbtqHhGcy8BZh5CzDzFiCblwJ6HzDdcZ/A3sc5dA0eIRL/jf4T+E3zeJ/6bOYpcOoTERxg/Dfm5Rg8jZXPB2vrgAC+8D5EDCXexy61GjwvJKrN0fVOEY5nqn/UZONMOVd6NPtFHfWlnfgXrs0rDTuUQyUMuXE1JIUsDiLl+ENIH7c84moPZtJl73o4qtleRDX1Ro+8X6FDgfl/Xr8m8VK8/3JTCtgh+nqck3hed5bX6FDgy+aNx6CA5454XneW1+hQ4ME3bzAmNUeMKS/QGEk9Zvi+7kiPtP9OhwJvuDBeHF+X4/wRbnm6C+OS73oM9Zz2K3Q8vjAMKph5CzDzFmDmPcaGf3/NW/0i6OA1AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Work Phone'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Text="[CustomerData.Rows(RowNumber)(&quot;work phone&quot;).ToString]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="531, 342, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'WindowsForms10.EDIT.app…'" FullSelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='textBox6' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='textBox6' /&gt;" Guid="7aa202ec-9681-4e62-ac1a-4fd492f58071" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAYCAYAAABJLzcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABnSURBVHhe7dJBDYBAEMBAdK/qdXD8+AAGmpmkDnrt7pGqGVzpnsFnRsr0OTgUGJw0g5NmcNIMTprBSTM4aQYnzeCkGZw0g5NmcNIMTprBSTM4aQYnzeCkGZy038GlSq/BpWIGV7g9N29sxizUYGeHAAAAAElFTkSuQmCC" InformativeScreenshot="73a0af380e9012c49650b741b822c5fd.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="452, 345, 73, 13" ElementType="Text" FriendlyName="'Work Phone'" FullSelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='label9' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel3' /&gt;&lt;wnd ctrlname='label9' check:text='Work Phone :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAARCAYAAACYRSE8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGnSURBVFhH7ZXhjcYgCIadynncxmHcxVm6AQcILfXEzzaXS77EH29SKRV4FBqO44CtZ9rQXmhDe6EN7YWG0EoKkMq1rjlCCAnK6VMghQi5Xj6uaoYYM9TROyvyCwHjqGLLYfX7f9QQGkGKucq6Qo64Rp2QuEALcaIn0Kyfrr8F2lEShDNRvFX4XCxIep/K/RtPb6HxbcaD+RpomjA9KyBKXkDdbiLaU5SWivINF5ogJWprstsDoLbTW2zUwakYl9eyV9a9tG3lGy/2iv94vJjaHTnQWkvSpgSoBW03rpp3zY/mX4PAs08B08wjOxdBxTdg7hzkb6QgW5TsdYJWmB9ij/27EcN2WT+QA01h9YDo2ZxEH1jX1i5FRDrhWUt7RazEWLXbQ2FNDnEiFxqfUMIWMwkwSLRpmy4VxMki5Ko3Q3x79Xt59lGMVfuHtluVD417u7sdNN/Qdv+zOi2iiffPXuLWb2Y/1wuxR/5mFg/jLWgCrQW5AJEIZHelMfg1XCUJm1CXHBc3StYrord3e09j//Knuar+f/4j2JppQ3uhDe2FNrTHOuAHQw3iIyaqbfUAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Personal Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Text="[CustomerData.Rows(RowNumber)(&quot;personal email&quot;).ToString]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="201, 418, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Personal Email'" FullSelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='textBox8' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='textBox8' /&gt;" Guid="3cf2f4cb-f284-41d1-a49a-dc9ce7929449" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAYCAYAAABJLzcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABnSURBVHhe7dJBDYBAEMBAdK/qdXD8+AAGmpmkDnrt7pGqGVzpnsFnRsr0OTgUGJw0g5NmcNIMTprBSTM4aQYnzeCkGZw0g5NmcNIMTprBSTM4aQYnzeCkGZy038GlSq/BpWIGV7g9N29sxizUYGeHAAAAAElFTkSuQmCC" InformativeScreenshot="c434bd3bf205ed4f52e2d9c063964d43.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="115, 421, 82, 13" ElementType="Text" FriendlyName="'Personal Email'" FullSelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='label11' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='label11' check:text='Personal Email :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAARCAYAAABHC1sjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGaSURBVFhH7VXbtcQgCLQq66Ebi7EXa0kHXDHgkgRdc7Pu/vgxJ4o8xlGJ27YNFz6PJewkLGEnYQk7CbawKaB3Dl2FR4iG37dBvHzAZNkPfHc85tyqN4C2sDrhgwIfRU/YT/KTfA/yjgm7RQQHGLXPL/AtYQWzhU0RXvO8Bp6fmwcMSfwBAXy2Z1ugL/nkFhJSzanjyiFxXChx7C/Pl2oWm7KfeFV07cLLoQ+Ra1E+5tWr08o7cNHGeqwIuCUM3vOY/YRAJhUKWVW02GlMcdTz9s0kEh4ir5822RNOvta65luQ63L+evh6PFKn5TeAwVag7JcNkKDafxfR5QOAfEOStZEWcT3PY8g5ah3L34pr2TvjZh3tdxP/ENZ4ApZ/kmfHN0evy7xlL7deXkDH/xLXsZvjN3V0zE3cE1aetOqbVwJM9tA6Oq1A16nzvZ1Iy0kBJt3YN3VaeQdwU1hay2TUT8jqWURQWoY3f17se66j5occ9FTJ3uJFdvbV8KB6to4drdOqxwcSL/YXbGEXHmMJOwlL2ElYwk7Bhn9eV8mWfUKrsgAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Work Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,227" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Text="[CustomerData.Rows(RowNumber)(&quot;work email&quot;).ToString]" Version="V3">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="531, 418, 180, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'WindowsForms10.EDIT.app…'" FullSelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='textBox7' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='textBox7' /&gt;" Guid="d8217346-cd81-412a-8889-e18d9b5bba71" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAYCAYAAABJLzcpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABnSURBVHhe7dJBDYBAEMBAdK/qdXD8+AAGmpmkDnrt7pGqGVzpnsFnRsr0OTgUGJw0g5NmcNIMTprBSTM4aQYnzeCkGZw0g5NmcNIMTprBSTM4aQYnzeCkGZy038GlSq/BpWIGV7g9N29sxizUYGeHAAAAAElFTkSuQmCC" InformativeScreenshot="dc9f42a2ad4ce9b02ef61d24f6c2f2e2.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="452, 421, 67, 13" ElementType="Text" FriendlyName="'Work Email'" FullSelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='label10' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='panel4' /&gt;&lt;wnd ctrlname='label10' check:text='Work Email :' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEcAAAARCAYAAACPZ7H1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG1SURBVFhH7ZbdscQgCIWtynrsxmLsxVrSAZeDkhAjTnZnZ+6LD2eW+IPwBcyG4zhoa64NZ6ENZ6ENZ6EpnJICpXI91xwphETlXFMohUi5Xmtc1UwxZqqzOSusC4HPucvG8ZXenj/RFA5gxFz7c6Uc+Zl1wpBELKyFPoHzZRJTqb9fwzlKonA65Cphu1hgmE/lvsfTf8FR/RyOtE2vDAWBQzqQW2XxeIq9DWLfIwElSgntiHELOnKraFUaeUkMvmIulMU2fjjGqyUxrvvYn+fX5ujIgdNaCW0EEK3vWwVVM9fW4V5oQcrdpCBxJ2H8DLKBce8p2aMJqjh49YV9o+3CNFC8dS/kwFEoIwjYhvh48Cwg2JxQRHWtWtFLYvTl2AB/QsW4ztt1H8qFI6WauJyNYwHGY9pej4RmAcGWCtAq62tHeUmMvh42Xha/NG0xHR9/1d8H8uHIocPbxv3DY/cvmdNWjyS67fW5l8TKl9itkrVda+4fE533/L7QAk5L/AIB9bdk7w0+/LqQx8AHmyUAZ8FinbaFEap36svYAKJ78ZfjHRxzPThawNnacBbacBbacFwd9AfVnG0kD6jWGQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9bbc25c2-abac-4f4d-b635-d622ebc87cd0" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="354, 473, 98, 37" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;wnd ctrlname='button1' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlname='button1' check:text='Save' /&gt;" Guid="ee70b5d2-c461-4fa8-b1dc-6dc8ad04b5e2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAApCAYAAADH0VzbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFrSURBVHhe7dbBkYMwDIVh9+Ru3IxbcQMUoVLogA4U2cZBJOzuzF54Zt7hn0kIyYEPiYRt25ThRRjQCAPaCWZZFnZj3uILZl1XdkOEAY0woBEGNMKARhjQCAMaYUAjDGiEAY0woBEGtLlgJGsMQUMtRs3l4pyHNBFM0RQMQ/b3DSlp+TrvGc0DUyFiVrn67IFNNDGiOQZNuaiMqRmVdKw4m6rUVtwvE2avk/1WX4npOAeoiWAsKZpTfANcXlA3WSUFjVnaccn2vVTsdQX+AAOcxLlgXGJTEsYFbRMwwOoUHMf7RXcY9dg4790PyDc2LUxfVXU17Sur9Mk4T8AAcccaDP6fhmlg+ioaF9xPTAcad7xkN0n796LhjJV2PKuuIHGaaGLEnhl+Xdld7zDGeqoIHqZPyMeqsmcVH/7sXxEGNMKARhjQCAMaYUAjDGiEAY0woBEGNMKARhjQ/oRh9+UtTjAMJ8KARhjINn0BpIStOk2MlaoAAAAASUVORK5CYII=" InformativeScreenshot="768edbfc435764646b7892a4aabfd70d.png" ScopeSelectorArgument="&lt;wnd app='sampledesktopapp.exe' ctrlname='Form1' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
                   <Assign sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_1">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:Int32">[RowNumber]</OutArgument>
